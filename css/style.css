@@ -1,0 +1,377 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+p{
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+body{
+    font-family: "Lato";
+    font-size: 16px;
+    color:#555;
+    font-weight: 300;
+}
+.navbar{
+    height: 62px;
+    width: 100%;
+    /* background: rgb(88, 79, 79); */
+    background: #111111;
+    border-bottom: 1px solid #9d9895;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+nav{
+    width: 80%;
+    background: #111111;
+    height: 62px;
+    line-height: 62px;
+    vertical-align: middle;
+    text-align: center;
+    border-bottom: 1px solid #9d9895;
+    /* delete the default gap between links 
+    by set parent font-size to zero*/
+    font-size: 0;
+    margin: 0 auto;
+    
+}
+.navbar nav a{
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    padding: 14.5px 19px;
+    border-left: 2px solid #222;
+}
+.navbar nav a:last-of-type{
+    border-right: 2px solid #222;
+}
+.navbar nav a:hover{
+    background: #1f1f1f;
+}
+.navbar nav a:active{
+    background: #44bbaa;
+}
+
+/* header of my photo and name */
+.box{
+    overflow: hidden;
+}
+.header{
+    width: 100%;
+    min-height: 500px;
+    background: url(../images/IMG_6840.JPG) no-repeat center center fixed ;
+    /* background: red; */
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    margin-top: 62px;
+}
+.header .content {
+    width: 80%px;
+    margin: 0 auto;
+    font-family: 'Raleway';
+    color: white;
+    font-weight: bold;
+    overflow: hidden;
+}
+.header .content h1{
+    margin-top: 110px;
+    padding-bottom: 10px;
+} 
+
+/* ********Resume part******* */
+.intro{
+    width: 100%;
+    background:#2c3e50;
+    padding: 60px 0;
+    overflow: hidden;
+}
+.intro .row{
+    width: 80%;
+    height: 100%;
+    margin: 0px auto;
+    color: white;
+    /* background: red; */
+    /* height 100% overflow hidden to responsive height */
+    overflow: hidden;
+}
+.intro .row div{
+    float: left;
+}
+.intro .row .col-1{
+    width: 25%;
+    font-family: "Raleway";
+    padding-left:100px;
+}
+.intro .row .col-2{
+    width: 50%;
+    padding: 0 15px;
+}
+.intro .row .col-3{
+    width: 25%;
+    padding-left: 15px;
+    font-size: 12px;
+}
+.intro .row .col-3 a{
+    color: white;
+    text-decoration: none;
+}
+h5{
+    padding-top: 8px;
+}
+
+/* *******RESUME part******** */
+.resume{
+    width: 100%;
+    /* background: tomato; */
+    padding: 50px 0px 60px 0px;
+    overflow: hidden;
+}
+.resume .row{
+    width: 80%;
+    height: 100%;
+    margin: 0px auto;
+    background:white;
+    /* height 100% overflow hidden to responsive height */
+    overflow: hidden;
+}
+.resume .row div{
+    float: left;
+}
+.resume .row .col-1{
+    width: 25%;
+    font-family: "Raleway";
+    padding-left:100px;
+    /* column one clear the float to make sure it will not go up, because column 3 is always shorter than column2, so it may go to right side of column2 */
+    clear:left;
+}
+.resume .row .col-2{
+    width: 50%;
+    padding: 0 15px;
+}
+.resume .row .col-3{
+    width: 25%;
+    padding-left: 15px;
+    font-size: 12px;
+}
+.resume .row hr{
+    border: 0.5px solid #9d9895;
+    margin: 16px 0 60px 0;
+    /* make sure it not going up */
+    clear: both;
+}
+
+.resume .row .col-2 ul{
+    padding-left: 15px;
+}
+/******Skills part*******/
+.skills{
+    width: 100%;
+    background: #2c3e50;
+    padding: 50px 0px 60px 0px;
+    overflow: hidden;
+}
+.skills .row{
+    width: 80%;
+    height: 100%;
+    margin: 0px auto;
+    /* background:red; */
+    color: #ffffff;
+    /* height 100% overflow hidden to responsive height */
+    overflow: hidden;
+}
+.skills .row div{
+    float: left;
+}
+
+.skills .row .col-1{
+    width: 25%;
+    font-family: "Raleway";
+    padding-left:100px;
+}
+.skills .row .col-2-skills{
+    width: 75%;
+    padding: 0 15px;
+    float: left;
+    overflow: hidden;
+}
+.skills .row .col-2-skills .skilldetails{
+    padding-top: 20px;
+    width: 30%;
+    height: 30%;
+    text-align: center;
+    /* align-items: center; */
+}
+.skills .row .col-2-skills .skilldetails img{
+    width: 30%;
+}
+.skills .row .col-2-skills .skilldetails:nth-of-type(4n){
+    clear: left;
+}
+
+/* *****************Projects part********************** */
+.project{
+    width: 100%;
+    /* background: yellow; */
+    padding: 50px 0 60px 0 ;
+    overflow: hidden;
+}
+.project .row{
+    width: 80%;
+    height: 100%;
+    margin: 0px auto;
+    /* background: white; */
+    overflow: hidden;
+}
+.project .row div{
+    float: left;
+}
+.project .row .col-1{
+    width: 25%;
+    font-family: "Raleway";
+    padding-left:100px;
+    /* column one clear the float to make sure it will not go up, because column 3 is always shorter than column2, so it may go to right side of column2 */
+    clear:left;
+}
+.project .row .col-2{
+    width: 50%;
+    padding: 0px 15px;
+}
+.project .row .col-2 img{
+    width: 100%;
+    padding: 10px 0;
+}
+
+.project .row .col-3{
+    width: 25%;
+    padding:0 15px;
+    font-size: 12px;
+}
+/* ************Contact form part***************** */
+.contact{
+    width: 100%;
+    padding: 50px 0;
+    background: #2f2f2f;
+}
+.contact .row{
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    color: white;
+    /* background: tomato; */
+}
+.contact .row div{
+    float: left;
+}
+.contact .row .col-1{
+    width: 25%;
+    padding-left: 50px;
+    font-family: "Raleway";
+}
+.contact .row .col-2{
+    width: 25%;
+    padding: 0 15px;
+}
+.contact .row .col-2 a{
+    padding: 5px 5px;
+    display: inline-block;
+}
+.contact .row .col-3{
+    width: 50%;
+    padding: 0 15px;
+    font-size: 12px;
+}
+.contact .row .col-3 form label{
+    color: #999999;
+    font-size: 16px;
+    font-weight: 700;
+}
+.contact .row .col-3 form input{
+    width: 100%;
+    height: 30px;
+    margin: 5px 0 15px;
+}
+.contact .row .col-3 form textarea{
+    width: 100%;
+    height: 100px;
+    margin: 5px 0 15px;
+    resize: none;
+}
+.contact .row .col-3 form .send-msg{
+    width: 100%;
+    text-align: center;
+    font-family: "Lato";
+}
+#btn{
+    width: 35%;
+    background: #44bbaa;
+    color: white;
+    font-size: 14px;
+    vertical-align: middle;
+    margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* **********Footer part*********** */
+.footer{
+    width: 100%;
+    height: 70px;
+    background: #222222;
+}
+footer{
+    width: 80%;
+    /* background:gray; */
+    color: white;
+    margin: 0 auto;
+    padding: 21px 0;
+    text-align: center;
+}
+/* ****Responsive*** */
+@media screen and (max-width:768px){
+    nav,.intro .row,.resume .row,.skills .row,.project .row,.contact .row,footer{
+        width: 90%;
+    }
+    .intro, .resume, .skills,.project,.contact{
+        padding-bottom: 0;
+    }
+}
+@media screen and (max-width:768px){
+    .intro .row [class*="col-"]{
+        width: 100%;
+        padding:10px 15px ;
+    }
+    .resume .row [class*="col-"]{
+        width: 100%;
+        padding:10px 15px ;
+    }
+    .empty{
+        display: none;
+    }
+    .skills .row [class*="col-"]{
+        width: 100%;
+        padding:10px 15px ;
+    }
+    .skills .row .col-2-skills .skilldetails{
+        width: 50%;
+    }
+    .skills .row .col-2-skills .skilldetails:nth-of-type(3n){
+        float: right;
+    }
+    .project .row [class*="col-"]{
+        width: 100%;
+        padding:10px 15px ;
+    }
+    .contact .row [class*="col-"]{
+        width: 100%;
+        padding:10px 15px ;
+    }
+    #btn{
+        font-size: 10px;
+    }
+}
