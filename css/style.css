@@ -62,10 +62,10 @@ nav{
 .header{
     width: 100%;
     min-height: 500px;
-    background: url(../images/IMG_6840.JPG) no-repeat center center fixed ;
+    background: url(../images/IMG_6840-1440.jpg) no-repeat center center fixed ;
     /* background: red; */
     background-size: cover;
-    background-position: center center;
+    /* background-position: center center; */
     text-align: center;
     margin-top: 62px;
 }
@@ -238,11 +238,40 @@ h5{
 }
 .project .row .col-2{
     width: 50%;
+    position: relative;
     padding: 0px 15px;
 }
-.project .row .col-2 img{
+.project .row .col-2 a img{
     width: 100%;
-    padding: 10px 0;
+    padding-bottom: 10px;
+}
+.project .row .col-2 .overlay{
+    position: absolute;
+    margin: 0 15px 10px;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008cba;
+    opacity: 0.8;
+    overflow: hidden;
+    /* width: 100%; */
+    height: 0;
+    transition: .5s ease;
+}
+.project .row .col-2:hover .overlay{
+    bottom: 0;
+    height: 100%;
+}
+.project .row .col-2 .overlay .overlay-text a{
+    white-space: nowrap;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .project .row .col-3{
@@ -342,6 +371,9 @@ footer{
     }
 }
 @media screen and (max-width:768px){
+    .header{
+        background: url(../images/IMG_6840-mobile.jpg) no-repeat center center;
+    }
     .intro .row [class*="col-"]{
         width: 100%;
         padding:10px 15px ;
