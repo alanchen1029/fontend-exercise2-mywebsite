@@ -62,10 +62,10 @@ nav{
 .header{
     width: 100%;
     min-height: 500px;
-    background: url(../images/IMG_6840-1440.jpg) no-repeat center center fixed ;
+    background: url(../images/IMG_6840-1440.jpg) no-repeat center top;
     /* background: red; */
     background-size: cover;
-    /* background-position: center center; */
+    background-position: center center;
     text-align: center;
     margin-top: 62px;
 }
