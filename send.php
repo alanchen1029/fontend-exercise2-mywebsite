@@ -13,7 +13,7 @@
         $mail = new PHPmailer;
 
         //has to enable if work on localhost, disable it if online
-        $mail->isSMTP();
+        //$mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->Port = 587;
         $mail->SMTPAuth = true;
