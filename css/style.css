@@ -199,6 +199,7 @@ h5{
     width: 25%;
     font-family: "Raleway";
     padding-left:100px;
+    
 }
 .skills .row .col-2-skills{
     width: 75%;
@@ -218,6 +219,43 @@ h5{
 }
 .skills .row .col-2-skills .skilldetails:nth-of-type(4n){
     clear: left;
+}
+/* ********Pyp work part******* */
+.pypwork{
+    width: 100%;
+    background:white;
+    padding: 60px 0;
+    overflow: hidden;
+}
+.pypwork .row{
+    width: 80%;
+    height: 100%;
+    margin: 0px auto;
+    /* background: red; */
+    /* height 100% overflow hidden to responsive height */
+    overflow: hidden;
+}
+.pypwork .row div{
+    float: left;
+}
+.pypwork .row .col-1{
+    width: 25%;
+    font-family: "Raleway";
+    padding-left:100px;
+    clear: left;
+}
+.pypwork .row .col-2{
+    width: 50%;
+    padding: 0 15px;
+}
+.pypwork .row .col-3{
+    width: 25%;
+    padding-left: 15px;
+    font-size: 12px;
+}
+.pypwork .row .col-3 a{
+
+    text-decoration: none;
 }
 
 /* *****************Projects part********************** */
